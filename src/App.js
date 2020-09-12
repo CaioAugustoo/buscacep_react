@@ -5,7 +5,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const inputBusca = useRef();
 
-  const handleSubmit = (evt) => {
+  const handleSubmit = evt => {
     evt.preventDefault();
     async function fetchCep() {
       setLoading(true);
